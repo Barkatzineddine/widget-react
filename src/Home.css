@@ -1,0 +1,329 @@
+
+.home-products-container::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+  }
+
+.home-products-container::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: darkgrey;
+    border-radius: 20px;
+  }
+
+.home-products-container::-webkit-scrollbar{
+    
+    width: 4px !important;
+   
+    
+}
+/*********************************************************************/
+.home-products-container{
+    height: fit-content;
+    padding: 0 20px;
+    max-height: 40vh;
+    margin-left: 10px;
+    width: calc(90% - 40px);
+    position: absolute;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+
+.home-container{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+   
+
+}
+
+.home-header{
+    height: calc(100% / 4);
+    max-height: 150px;
+    background-color: #04A7F1;
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.home-header img{
+   width: 150px;
+   height: fit-content;
+}
+.home-header .language {
+   display: flex;
+   align-items: center;
+    height: fit-content;
+ }
+
+.home-header .language img{
+    width: 25px;
+    height: fit-content;
+ }
+
+ .home-header .language button {
+    color: white !important;
+    height: fit-content;
+ }
+.home-main{
+    text-align: start;
+    height: calc(100% - (100%/4) - 90px);
+    overflow-y: scroll;
+}
+ .home-search span{
+
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color:#03A9F4 ;
+    padding-bottom: 5px;
+  
+}
+
+ .home-search form{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: calc(90% - 40px);
+    height: fit-content;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #91A8BF;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
+
+.home-search span{
+    position: relative;
+    left: 0;
+}
+
+.home-search form input{
+    height: 45px;
+    width: 90%;
+    border-width: 0;
+    color: #91A8BF;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 10px;
+    outline: none;
+    
+}
+
+.home-products-container{
+    height: fit-content;
+    margin-left: 10px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding: 0 20px;
+    max-height: 40vh;
+    width: calc(90% - 40px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    max-height: 30vh;
+    
+    
+}
+
+.home-products-container .loading{
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.home-product{
+   display: flex;
+   padding: 10px;
+   width: 96%;
+   border-style: solid;
+   border-width: 0 0 1px 0;
+   border-color: #91A8BF;
+   background-color: #ffffff;
+   cursor: pointer;
+}
+
+.home-product:hover{
+   background-color: #e0e3e6;
+ }
+ 
+
+
+
+.home-product img{
+    margin-right: 20px;
+ }
+
+.home-product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.home-product-details span{
+   border-width: 0;
+
+}
+
+
+.home-search{
+    margin-top: 70px;
+}
+
+.widget-home-container{
+    width: 40%;
+    
+    max-width: 450px;
+    height: 95vh;
+    position:fixed;
+    padding: 20px 0 0 0px;
+    right: 25px;
+    bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+    transition-delay: 0.05s;
+    
+   
+}
+
+/******************HOME COMPARE*******************/
+
+.home-compare{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-compare span{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color:#03A9F4 ;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.home-compare button {
+    
+    margin-top: 25px;
+    margin-left: 10px;
+    width: calc(90% - 40px);
+    background-color: #EEF2F6;
+    height: fit-content;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #91A8BF;
+    display: flex;
+    padding: 13px 20px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    cursor: pointer;
+    
+}
+
+.home-compare button:hover{
+    
+   
+    
+    background-color: #e0e3e6;
+  
+    
+}
+
+.home-compare button span{
+    
+    margin: 0;
+    border-width: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+ 
+    
+}
+
+.home-compare button img{
+    width: 21px;
+    margin-right: 13px;
+    
+    
+}
+
+/*************************************************/
+
+
+/******************HOME FOOTER********************/
+
+.home-footer{
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    border-color: #EEF2F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+}
+
+.home-footer span{
+    margin-right: 10px;
+    height: fit-content;
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+    
+}
+
+.home-footer img{
+    height: fit-content;
+    
+}
+
+
+/*************************************************/
+.home-main::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: darkgrey;
+    border-radius: 20px;
+}
+
+.home-main::-webkit-scrollbar{
+    
+    width: 4px !important;
+   
+}
+
+.home-main::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+  }
